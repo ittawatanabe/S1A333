@@ -5,6 +5,7 @@
     font-size: 14px;
     color: #333;
 }
+
 body {
     background: #ddd;
 }
@@ -26,21 +27,21 @@ dl {
     align-items: center;
 }
 
-p {
+dt {
     flex: 1 1 30px;
     text-align: right;
     margin-right: 1em;
     font-weight: bold;
     color: #00a;
-    
+
 }
 
 dd {
-    flex:  2 1 30px;
+    flex: 2 1 30px;
     margin-left: 0;
 }
 
-input[type="text"], select.textarea {
+input[type="text"], textarea {
     border: 1px solid #999;
     width: 100%;
     padding: 10px;
@@ -63,8 +64,12 @@ textarea {
     height: 5em;
 }
 
+.btm {
+    text-align: center;
+}
+
 input[type="submit"] {
-    background: #fff;
+    background: #00a;
     border: none;
     width: 100%;
     padding: 10px;
@@ -72,13 +77,21 @@ input[type="submit"] {
     color: #fff;
     font-size: 14px;
 }
+
 @media screen and (max-width: 768px) {
-    .formltem {display: block;}
-    p {
+    .formltem {
+        display: block;
+    }
+
+    dt {
         text-align: left;
         margin-bottom: 4px;
     }
-    dd {margin-left: 0;}
+
+    dd {
+        margin-left: 0;
+    }
+
     .job {
         margin-right: 8em;
     }
